@@ -1,7 +1,7 @@
 services:
   - type: web
     name: incidents-api
-    env: php
+    runtime: php   # 👈 correct key
     plan: free
     buildCommand: |
       composer install --optimize-autoloader --no-dev
